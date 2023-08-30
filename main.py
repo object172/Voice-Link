@@ -35,7 +35,7 @@ def get_point(value, minimum, scale, shift=0) -> int:
     return int(float((value-minimum) * scale)) + shift
 
 
-def get_circle_coord(x, y, r: int) -> list[tuple[int | int, int | int]]:
+def get_circle_coord(x, y, r: int) -> list[tuple, tuple]:
     return [(x-r, y-r), (x+r, y+r)]
 
 
